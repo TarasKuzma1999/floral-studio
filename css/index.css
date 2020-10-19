@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Vidaloka&display=swap');
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+table,
+th,
+td,
+embed,
+object {
+    padding: 0;
+    margin: 0;
+}
+
+.social-media {
+    display: none;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.social-media a img {
+    height: 30px;
+    margin: 5px;
+}
+
+.burger-meny-icon div div {
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+.logo-and-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.banner nav {
+    display: none;
+}
+
+.banner nav a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.banner nav a:hover {
+    color: #000;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(223, 121, 148, 0.8), rgba(223, 121, 148, 0.8)), url(../img/header-banner-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.header-logo .logo {
+    color: #fff;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 34px;
+    margin-top: 10px;
+}
+
+.header-logo p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.burger-meny-icon {
+    display: flex;
+    align-items: center;
+}
+
+.banner-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.banner-header h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+.banner-header p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+@media (min-width: 990px) {
+    .social-media {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .burger-meny-icon {
+        display: none;
+    }
+
+    .banner nav {
+        display: flex;
+    }
+}
