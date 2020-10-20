@@ -40,11 +40,16 @@ object {
     margin: 5px;
 }
 
+.burger-meny-icon {
+    cursor: pointer;
+}
+
 .burger-meny-icon div div {
     width: 24px;
     height: 2px;
     background-color: black;
     margin: 4px 0;
+
 }
 
 .logo-and-nav {
@@ -122,6 +127,63 @@ object {
     margin-top: 20px;
 }
 
+.burger-meny {
+    display: none;
+}
+
+.burger-meny.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    background: #3F3F3F;
+}
+
+.back-button {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo-and-back {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.burger-meny nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger-meny nav a {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.burger-meny nav a:hover {
+    color: #000;
+}
+
+.burger-social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.burger-social-media a img {
+    height: 30px;
+    margin: 10px;
+}
+
 @media (min-width: 990px) {
     .social-media {
         display: flex;
@@ -135,4 +197,81 @@ object {
     .banner nav {
         display: flex;
     }
+}
+
+.about-us {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-us h2 {
+    text-align: center;
+    color: #000;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+    margin: 40px;
+}
+
+.about-us p {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.5;
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+}
+
+.services {
+    background-image: url('../img/services-bg.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.services-title h2{
+    text-align: center;
+    color: #000;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+    margin: 40px;
+}
+
+.services-title p {
+    color: #857F7F;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.5;
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+}
+
+.our-services {
+    height: 490px;
+    background-size: cover;
+    
+}
+
+.our-services h3{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.services-list .decoration{
+    background: url('../img/services-decoration-bg.jpeg');
+}
+
+.services-list .floral-design {
+    background: url('../img/services-floral-design-bg.jpeg');
+}
+
+.services-list .events {
+    background: url('../img/services-events-bg.jpeg');
 }
