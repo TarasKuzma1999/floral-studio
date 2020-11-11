@@ -252,8 +252,10 @@ object {
 
 .our-services {
     height: 490px;
-    background-size: cover;
-    
+    margin: 20px 0;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
 }
 
 .our-services h3{
@@ -264,14 +266,56 @@ object {
     text-align: center;
 }
 
+.our-services p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    padding: 20px;
+    opacity: 1;
+}
+
 .services-list .decoration{
-    background: url('../img/services-decoration-bg.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/services-decoration-bg.jpeg');
+    background-size: cover;
+    background-position:  center;
 }
 
 .services-list .floral-design {
-    background: url('../img/services-floral-design-bg.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/services-floral-design-bg.jpeg');
+    background-size: cover;
+    background-position:  center;
 }
 
 .services-list .events {
-    background: url('../img/services-events-bg.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/services-events-bg.jpeg');
+    background-size: cover;
+    background-position:  center;
+}
+
+@media(min-width: 770px) {
+    .services-list {
+        display: flex;       
+        flex-wrap: wrap;
+        justify-content: center;    
+    }
+
+    .our-services {
+        width: 40%;
+        margin: 20px;
+    }
+}
+
+@media(min-width: 990px) {
+    .our-services {
+        width: 300px;
+                
+    }
+
+    .our-services p{
+        opacity: 0;
+        transition: 0.5s ;
+    }
+   
 }
