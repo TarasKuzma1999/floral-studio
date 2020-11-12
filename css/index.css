@@ -319,3 +319,75 @@ object {
     }
    
 }
+
+.events-we-serve {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.events-we-serve-title h2{
+    text-align: center;
+    color: #000;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+    margin: 40px;
+}
+
+.events-we-serve-blocks {
+    display: grid;
+}
+
+.events-we-serve-blocks div{
+    height: 140px;
+    background-size: cover;
+    background-position: center;
+    margin: 15px 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.events-we-serve-blocks div p {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.events-we-serve-blocks .weddings {
+    background-image: linear-gradient(rgba(223, 121, 148, 0.8), rgba(223, 121, 148, 0.8)), url(../img/events-we-serve-weddings.jpeg);
+}
+
+.events-we-serve-blocks .corporate {
+    background-image: linear-gradient(rgba(223, 121, 148, 0.8), rgba(223, 121, 148, 0.8)), url(../img/events-we-serve-corporate.jpg);
+}
+
+.events-we-serve-blocks .funerals {
+    background-image: linear-gradient(rgba(223, 121, 148, 0.8), rgba(223, 121, 148, 0.8)), url(../img/events-we-serve-funerals.jpg);
+}
+
+.events-we-serve-blocks .hotels {
+    background-image: linear-gradient(rgba(223, 121, 148, 0.8), rgba(223, 121, 148, 0.8)), url(../img/events-we-serve-hotels.jpeg);
+}
+
+.events-we-serve-blocks .parties {
+    background-image: linear-gradient(rgba(223, 121, 148, 0.8), rgba(223, 121, 148, 0.8)), url(../img/events-we-serve-parties.jpg);
+}
+
+.events-we-serve-blocks .sports {
+    background-image: linear-gradient(rgba(223, 121, 148, 0.8), rgba(223, 121, 148, 0.8)), url(../img/events-we-serve-sports.jpg);
+}
+
+@media( min-width: 770px) {
+    .events-we-serve-blocks {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .events-we-serve-blocks div {
+        height: 170px;
+        margin: 10px;
+    }
+}
