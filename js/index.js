@@ -50,3 +50,20 @@ $('.events').mouseout(function (ev) {
     }
 })
 
+
+$('.our-portfolio-carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.our-portfolio-carousel-nav'
+});
+$('.our-portfolio-carousel-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.our-portfolio-carousel',
+    dots: true,
+    centerMode: false,
+    focusOnSelect: true
+});
+

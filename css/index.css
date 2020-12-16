@@ -391,3 +391,52 @@ object {
         margin: 10px;
     }
 }
+
+.our-portfolio {
+    background: #F3F1F0;
+    padding: 35px;
+}
+
+.our-portfolio h2 {
+    text-align: center;
+    color: #3F3F3F;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+    margin: 40px;
+}
+
+.our-portfolio-carousel {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.our-portfolio-carousel div {
+    width: 100%;
+    box-sizing: content-box;
+    max-height: 700px;
+    
+}
+
+.our-portfolio-carousel div img {
+    width: 100%;
+    max-width: 900px;
+    max-height: 600px;
+    margin: auto;
+}
+
+.our-portfolio-carousel-nav img {
+    margin: 10px;
+}
+
+.our-portfolio-carousel-nav {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #BD7689;
+    font-size: 30px;
+}
