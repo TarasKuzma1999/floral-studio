@@ -440,3 +440,104 @@ object {
     color: #BD7689;
     font-size: 30px;
 }
+
+.order-flowers {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/order-flowers-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    box-sizing: border-box;  
+    
+}
+
+.order-flowers-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.order-flowers-content h2 {
+    text-align: center;
+    color: #fff;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+    text-align: left;
+    padding-top: 60px;
+    margin: 10px 20px;
+    
+}
+
+.order-flowers-content p {
+    background: #DE8BA2;
+    border-radius: 30px;
+    display: inline-block;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    padding: 15px 20px;
+    margin: 60px 0;
+    position: relative;
+    right: 10px;
+}
+
+.order-flowers-content p:hover {
+    background: #857F7F;
+    transition: all 0.5s;
+}
+
+@media (min-width: 770px) {
+    .order-flowers-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .order-flowers-content h2 {
+        padding-top: 0px;
+    }
+}
+
+.flowers-list-flower {
+    margin: 20px;
+    max-width: 1200px;
+
+}
+.flowers-list-flower img {
+    width: 100%;   
+}
+
+.flowers-list-flower h3 {
+    color: #3f3f3f;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    margin: 20px 0
+    ;
+}
+
+.flowers-list-flower p {
+    color: #857F7F;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.flowers-list-flower a {
+    background: #DE8BA2;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.flowers-list-flower a:hover {
+    background: #857F7F;
+    transition: all 0.5s;
+    
+}
