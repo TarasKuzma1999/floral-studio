@@ -459,7 +459,6 @@ object {
 }
 
 .order-flowers-content h2 {
-    text-align: center;
     color: #fff;
     font-family: 'Vidaloka', sans-serif;
     font-size: 34px;
@@ -500,6 +499,25 @@ object {
     }
 }
 
+.flowers {
+    background: #F3F1F0;
+    padding: 20px 0;
+}
+
+.flowers h2 {
+    text-align: center;
+    color: #3f3f3f;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+
+.flowers-list {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .flowers-list-flower {
     margin: 20px;
     max-width: 1200px;
@@ -513,8 +531,7 @@ object {
     color: #3f3f3f;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
-    margin: 20px 0
-    ;
+    margin: 20px 0;
 }
 
 .flowers-list-flower p {
@@ -538,6 +555,68 @@ object {
 
 .flowers-list-flower a:hover {
     background: #857F7F;
-    transition: all 0.5s;
-    
+    transition: all 0.5s;    
 }
+
+@media(min-width: 770px) {
+    .flowers-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media(min-width: 990px) {
+    .flowers-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.additional-services {
+    background: #F3F1F0;
+    padding: 20px 0;
+}
+
+.additional-services h2 {
+    text-align: center;
+    color: #3f3f3f;
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+
+.additional-services-list p {
+    background: #DE8BA2;
+    margin: 30px 20px;
+    height: 60px;
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width: 770px) {
+    .additional-services-list {
+        display: flex;       
+        flex-wrap: wrap;
+        justify-content: center;   
+        max-width: 1200px;
+        margin: auto;      
+    }
+
+    .additional-services-list p {
+        width: 40%;
+        height: 100px;
+    }
+}
+
+@media(min-width: 990px) {
+    .additional-services-list p {
+        width: 25%;
+    }
+}
+
