@@ -715,3 +715,70 @@ object {
         margin: auto;
     }
 }
+
+.contacts {
+    background-image: linear-gradient(rgba(223, 121, 148, 0.5), rgba(223, 121, 148, 0.5)), url(../img/contacts-bg.jpeg);  
+    background-position: center;
+    background-size: cover;
+    padding: 20px;   
+}
+
+
+.contacts-info h2 {
+    font-family: 'Vidaloka', sans-serif;
+    font-size: 34px;
+    font-weight: lighter;
+    margin: 20px 0;
+    color: #f7f3f0;
+}
+
+.contacts-info p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #f7f3f0;
+}
+
+.contacts-info div h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 24px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.contacts-info iframe {
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+}
+
+.contacts-form {
+    background-color: #F7F3F0;
+    border-radius: 10px;
+    padding: 30px 0;
+}
+
+.contacts-form form input {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    background: #E0DDDA;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    color: #3F3F3F;
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+}
+
+.contacts-form-message {
+    height: 150px;    
+}
+
+.contacts-form form .contacts-form-button {
+    background: #DE8BA2;
+    color: #F7F3F0;
+    padding: 15px;
+    margin-top: 40px;
+}
