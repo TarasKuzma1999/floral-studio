@@ -1,6 +1,17 @@
 $('.burger-meny-icon').click(function (event) {
     $('.burger-meny').toggleClass('active');
+    if ($('.burger-meny').hasClass('active')) {
+        $('body').css({
+            'overflow': 'hidden'
+        })
+    } else {
+        $('body').css({
+            'overflow': 'visible'
+        })
+    }
 })
+
+
 
 $('.decoration').mouseover(function (ev) {
     if ($(window).width() >= 990) {
